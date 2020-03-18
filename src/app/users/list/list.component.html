@@ -1,1 +1,4 @@
-<p>list works!</p>
+<app-card></app-card>
+<div *ngFor="let user of users$ | async">
+  {{ user.first_name }}
+</div>
