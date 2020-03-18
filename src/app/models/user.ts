@@ -1,2 +1,11 @@
-export class User {
+import { IUser } from '../interfaces/iuser';
+
+export class User implements IUser {
+
+  constructor (
+    public id: number,
+    public first_name: string,
+    public last_name: string,
+    public avatar: string,
+  ) { }
 }
