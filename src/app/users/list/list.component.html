@@ -1,4 +1,6 @@
-<app-card></app-card>
-<div *ngFor="let user of users$ | async">
-  {{ user.first_name }}
+<div class="container is-fluid user-list">
+  <ng-container *ngFor="let user of users$ | async">
+    <app-card class="user-card" [user]="user"></app-card>
+    <!-- {{ user.first_name }} -->
+  </ng-container>
 </div>
